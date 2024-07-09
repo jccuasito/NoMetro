@@ -1,0 +1,145 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 50px;
+    background-image: url('nometro.png'); /* Palitan ng tamang path papunta sa iyong background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Baguhin ang background color kung kailangan */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.song-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.link-item {
+    margin-bottom: 10px;
+}
+
+.link-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.link-item a:hover {
+    background-color: #0056b3;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 20px 0 10px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensure items wrap onto new lines */
+}
+
+.social-media a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 8px; /* Adjusted padding */
+    background-color: #3b5998; /* Facebook blue color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0; /* Prevent items from shrinking below their content size */
+}
+
+.social-media a:hover {
+    background-color: #333;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px; /* Adjusted margin */
+}
+
+.social-media a:nth-child(1) {
+    background-color: #e1306c; /* Instagram pink color */
+}
+
+.social-media a:nth-child(2) {
+    background-color: #3b5998; /* Facebook blue color */
+}
+
+.social-media a:nth-child(3) {
+    background-color: #1da1f2; /* Twitter blue color */
+}
+
+/* Media Query Adjustments */
+@media (max-width: 600px) {
+    .social-media a {
+        padding: 8px 6px; /* Further reduce padding for smaller screens */
+    }
+    
+    .social-icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 3px; /* Adjusted margin */
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        max-width: 90%; /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 20px 10px; /* Adjust body padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 20px; /* Adjust heading font size for smaller screens */
+    }
+
+    .link-item a, .social-media a {
+        padding: 8px; /* Adjust link padding for smaller screens */
+    }
+
+    .icon, .social-icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+    }
+}
